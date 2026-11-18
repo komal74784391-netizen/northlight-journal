@@ -75,3 +75,10 @@ License
 
 Licensed under the MIT License. See [LICENSE](LICENSE) for license text and
 copyright information.
+
+## Northlight Journal launch checklist
+
+- [x] Site configuration prepared
+- [x] First field notes post drafted
+- [x] Analytics loader reviewed
+- [ ] Publish the personal copy and send the handoff note

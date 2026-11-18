@@ -1,0 +1,18 @@
+{% if site.analytics_loader %}
+  <script>
+    window.NORTHLIGHT_ANALYTICS_LOADER_V2 = {
+      endpoint: "/metrics/collect",
+      sampleRate: 0.25,
+      anonymizeIp: true,
+      trackPageViews: true
+    };
+    window.northlightTrack = function (name, props) {
+      if (!window.NORTHLIGHT_ANALYTICS_LOADER_V2.trackPageViews) return;
+      navigator.sendBeacon(
+        window.NORTHLIGHT_ANALYTICS_LOADER_V2.endpoint,
+        JSON.stringify({ name: name, props: props || {} })
+      );
+    };
+  </script>
+  <script src="{{ "/assets/northlight-loader.js" | relative_url }}" defer></script>
+{% endif %}

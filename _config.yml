@@ -1,6 +1,6 @@
-author: Ramon de C Valle
-baseurl: /jekyll-theme-template
-description: A Jekyll theme template.
+author: Northlight Studio
+baseurl: /northlight-journal
+description: Field notes and studio dispatches from Northlight.
 excerpts: true
 exclude:
   - "*.gemspec"
@@ -13,5 +13,7 @@ paginate_path: /pages/:num/
 permalink: /:year/:month/:day/:title/
 plugins:
   - jekyll-paginate
-title: Title
-url: https://rcvalle.github.io
+title: Northlight Journal
+url: https://journal.northlight.studio
+show_downloads: false
+analytics_loader: NORTHLIGHT_ANALYTICS_LOADER_V2
